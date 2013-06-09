@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<%= render "video" %>
+   
+
+<p>
+  <b>Description:</b>
+  <%= @video.description %>
+</p>
+
+<p>
+  <b>Length in seconds:</b>
+  <%= @video.length_in_seconds %>
+</p>
+
+<p>
+  <b>Uploaded on:</b>
+  <%= @video.uploaded_on %>
+</p>
+
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>
