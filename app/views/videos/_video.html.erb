@@ -1,6 +1,7 @@
 <div id="video">Loading the player...</div>
 
 <script type="text/javascript">
+jwplayer.key="<%= API_KEYS['JW_PLAYER_KEY'].to_s %>"
   $(document).ready(function(){    
     jwplayer("video").setup({
 //        file: "/videos/primary/primary.mp4",
