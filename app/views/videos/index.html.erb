@@ -4,9 +4,6 @@
   <tr>
     <th>Name</th>
     <th>Description</th>
-    <th>Primary located at</th>
-    <th>Preview located at</th>
-    <th>Thumbnail located at</th>
     <th>Length in seconds</th>
     <th>Uploaded on</th>
     <th></th>
@@ -16,11 +13,9 @@
 
 <% @videos.each do |video| %>
   <tr>
+    <td><%= image_tag video.thumbnail.url(:small) %></td> 
     <td><%= video.name %></td>
     <td><%= video.description %></td>
-    <td><%= video.primary_located_at %></td>
-    <td><%= video.preview_located_at %></td>
-    <td><%= video.thumbnail_located_at %></td>
     <td><%= video.length_in_seconds %></td>
     <td><%= video.uploaded_on %></td>
     <td><%= link_to 'Show', video %></td>
