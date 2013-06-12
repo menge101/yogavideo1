@@ -18,6 +18,7 @@ gem 'mysql2'
 gem 'activerecord-mysql-adapter'
 gem 'execjs'
 gem 'therubyracer'
+gem 'paperclip',             '~> 3.0'
 
 group :test, :development do
   # NOTE database_cleaner is not required, but highly recommended

@@ -11,18 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130609012551) do
+ActiveRecord::Schema.define(:version => 20130612013732) do
 
   create_table "videos", :force => true do |t|
     t.string   "name"
     t.text     "description"
-    t.string   "primary_located_at"
-    t.string   "preview_located_at"
-    t.string   "thumbnail_located_at"
     t.integer  "length_in_seconds"
     t.datetime "uploaded_on"
-    t.datetime "created_at",           :null => false
-    t.datetime "updated_at",           :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+    t.string   "preview_video_file_name"
+    t.string   "preview_video_content_type"
+    t.integer  "preview_video_file_size"
+    t.datetime "preview_video_updated_at"
+    t.string   "primary_video_file_name"
+    t.string   "primary_video_content_type"
+    t.integer  "primary_video_file_size"
+    t.datetime "primary_video_updated_at"
+    t.string   "thumbnail_file_name"
+    t.string   "thumbnail_content_type"
+    t.integer  "thumbnail_file_size"
+    t.datetime "thumbnail_updated_at"
   end
 
 end

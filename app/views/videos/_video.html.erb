@@ -4,11 +4,8 @@
 jwplayer.key="<%= API_KEYS['JW_PLAYER_KEY'].to_s %>"
   $(document).ready(function(){    
     jwplayer("video").setup({
-//        file: "/videos/primary/primary.mp4",
-//        image: "/videos/thumbnails/thumb.jpg",
-//        title:"test1",
-      file: "<%= @video.primary_located_at %>",
-      image: "<%= @video.thumbnail_located_at %>",
+      file: "<%= @video.primary_video.url %>",
+      image: "<%= @video.thumbnail.url %>",
       title:"<%= @video.name %>",
       width:"100%",
       aspectratio:"3:2"
