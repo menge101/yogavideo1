@@ -1,14 +1,3 @@
-<div id="video">Loading the player...</div>
-
-<script type="text/javascript">
-jwplayer.key="<%= API_KEYS['JW_PLAYER_KEY'].to_s %>"
-  $(document).ready(function(){    
-    jwplayer("video").setup({
-      file: "<%= @video.primary_video.url %>",
-      image: "<%= @video.thumbnail.url %>",
-      title:"<%= @video.name %>",
-      width:"100%",
-      aspectratio:"3:2"
-    });
-  })
-  </script> 
+<video id="local1" class="sublime" poster="https://cdn.sublimevideo.net/vpa/ms_800.jpg" width="640" height="360" title="LOcal1" data-uid="Local1" preload="none">
+  <source src="<%= @video.primary_video.url %>" />
+</video>
