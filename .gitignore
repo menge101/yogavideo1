@@ -16,3 +16,6 @@
 
 #ignore all vim swap files
 *.swp
+
+#ignore all non-sample config yamls
+/config/*.yml
